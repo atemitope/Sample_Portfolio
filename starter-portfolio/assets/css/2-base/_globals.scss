@@ -1,0 +1,25 @@
+html {
+  font-family: $font-stack;
+  font-size: rem($base-size);
+  text-align: center;
+}
+
+html, body, #app, .main-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #eee;
+  color: $main-color;
+}
+
+h3 {
+  font-size: $xx-medium;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

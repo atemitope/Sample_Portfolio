@@ -1,0 +1,26 @@
+// Typography
+
+$font-url: "https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,700";
+
+@import url($font-url);
+
+$font-stack: "Avenir Next", "Avenir", "Montserrat", "PT Sans", sans-serif;
+
+$base-size: 14px;
+$modular-scale-base: $base-size;
+
+$xx-small: modular-scale(-3);
+$x-small: modular-scale(-2);
+$small: modular-scale(-1);
+
+$medium: modular-scale(1);
+$x-medium: modular-scale(2);
+$xx-medium: modular-scale(3);
+
+$large: modular-scale(4);
+$x-large: modular-scale(5);
+$xx-large: modular-scale(6);
+
+// Colors
+
+$main-color: #c98475;

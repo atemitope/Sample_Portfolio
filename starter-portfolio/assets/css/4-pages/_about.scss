@@ -1,0 +1,118 @@
+// ====================
+// Wrapper for about, project, testimonials and contact
+// ====================
+
+.about {
+  padding: 20px;
+}
+
+// ====================
+// end ^^ Wrapper for about, project, testimonials and contact
+// ====================
+
+// ====================
+// Popup section
+// ====================
+
+.popup {
+  @include transition-duration(.6s);
+  margin-bottom: 30px;
+
+  h3 {
+    color: $main-color;
+  }
+
+  input {
+    background: transparent;
+    border: 0;
+    border-bottom: 4px solid $main-color;
+    color: lighten($main-color, 5%);
+    outline: 0;
+    padding: 10px 15px;
+    width: 50%;
+  }
+
+  button {
+    background-color: $main-color;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    outline: 0;
+    transform: translateY(12px);
+    width: 12%;
+  }
+}
+
+// ====================
+// end ^^ Popup section
+// ====================
+
+// ====================
+// About me section
+// ====================
+
+
+.about-me {
+  @include outer-container;
+  border-bottom: 1px solid #eee;
+
+  p {
+    @include span-columns(7);
+    @include shift(2.2);
+    color: $main-color;
+    word-spacing: 2px;
+    font-size: $medium;
+
+    img {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+// ====================
+// end ^^ About me section
+// ====================
+
+// ====================
+// My projects section
+// ====================
+
+.my-projects {
+  @include outer-container;
+
+  .column {
+    @include span-columns(6);
+
+    img {
+      @include filter(grayscale(1));
+      opacity: .8;
+      transition-duration: .6s;
+
+      &:hover {
+        @include filter(none);
+        opacity: 1;
+      }
+    }
+
+    p {
+      text-align: left;
+
+      a {
+        color: $main-color;
+        display: block;
+        padding-top: 5px;
+        text-decoration: none;
+
+        .fa {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// ====================
+// end ^^ My projects section
+// ====================

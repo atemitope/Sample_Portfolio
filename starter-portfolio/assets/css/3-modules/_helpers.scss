@@ -1,0 +1,36 @@
+.hidden {
+  opacity: 0;
+}
+
+.showing {
+  display: block;
+  opacity: 1;
+}
+
+.not-showing {
+  display: none;
+}
+
+.rounded-img {
+  border-radius: 100%;
+}
+
+.group {
+  @include row;
+}
+
+.long-guest-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+p .long-guest-name {
+  width: 120px;
+  transform: translateY(7px);
+}
+
+h3 .long-guest-name {
+  width: 220px;
+  transform: translateY(13px);
+}
