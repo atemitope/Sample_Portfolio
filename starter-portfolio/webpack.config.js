@@ -11,20 +11,16 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: "babel-loader",
+        loader: "babel",
         exclude: "node_modules",
         query: {
+          compact: false,
           presets: ["es2015", "react"]
         }
       }
     ]
   },
   plugins: [
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     warnings: false
-    //   }
-    // }),
     new webpack.optimize.OccurenceOrderPlugin()
   ]
 };

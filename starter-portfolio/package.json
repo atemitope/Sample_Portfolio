@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --inline",
+    "watch": "webpack -w",
     "sass": "sass --watch assets/css/style.scss:assets/css/style.min.css --style compressed",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.production.js"
   },
   "private": true,
   "keywords": [],
@@ -15,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-scroll": "^1.0.16"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",

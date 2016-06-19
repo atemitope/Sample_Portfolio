@@ -2,7 +2,7 @@
 // Wrapper for about, project, testimonials and contact
 // ====================
 
-.about {
+.main {
   padding: 20px;
 }
 
@@ -17,6 +17,10 @@
 .popup {
   @include transition-duration(.6s);
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    // margin-bottom: 0;
+  }
 
   h3 {
     color: $main-color;
@@ -50,13 +54,40 @@
 // ====================
 
 // ====================
+// Sneaky Nav
+// ====================
+
+.sneaky-nav {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition-duration: 0.6s;
+  z-index: 1;
+
+  .nav-item {
+    color: #c98475;
+    text-decoration: none;
+    padding: 25px;
+  }
+}
+
+// ====================
+// end ^^ Sneaky Nav
+// ====================
+
+// ====================
 // About me section
 // ====================
 
 
 .about-me {
-  @include outer-container;
-  border-bottom: 1px solid #eee;
+  @extend %section-modifier;
 
   p {
     @include span-columns(7);
@@ -80,7 +111,7 @@
 // ====================
 
 .my-projects {
-  @include outer-container;
+  @extend %section-modifier;
 
   .column {
     @include span-columns(6);
@@ -115,4 +146,83 @@
 
 // ====================
 // end ^^ My projects section
+// ====================
+
+// ====================
+// Testimonial section
+// ====================
+
+.testimonials {
+  @extend %section-modifier;
+
+  h3 {
+    @include span-columns(6);
+    @include shift(3);
+  }
+
+  .testimonial-section {
+    @include span-columns(6);
+    @include shift(3);
+
+    img {
+      border-radius: 50%;
+    }
+
+    img, p {
+      transition-duration: 0.6s;
+    }
+
+    .testimony {
+      .fa {
+        display: block;
+      }
+
+      .fa-quote-left {
+        text-align: left;
+      }
+
+      .fa-quote-right {
+        text-align: right;
+      }
+
+      p {
+        padding: 25px;
+      }
+    }
+  }
+}
+
+// ====================
+// end ^^ Testimonial section
+// ====================
+
+// ====================
+// Footer
+// ====================
+
+.footer {
+  @include outer-container;
+
+  h3 {
+    @include span-columns(6);
+    @include shift(3);
+  }
+
+  .social-icons, .copyright {
+    @include span-columns(6);
+    @include shift(3);
+  }
+
+  .social-icons {
+    a {
+      color: $main-color;
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+}
+
+// ====================
+// end ^^ Footer
 // ====================

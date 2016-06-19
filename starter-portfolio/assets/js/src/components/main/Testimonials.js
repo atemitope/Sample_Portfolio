@@ -1,4 +1,7 @@
 import React from "react";
+import ReactScroll from "react-scroll";
+
+const Element = ReactScroll.Element;
 
 export default class Testimonials extends React.Component {
   _fetchTestimonies() {
@@ -61,7 +64,7 @@ export default class Testimonials extends React.Component {
 
   render() {
     return (
-      <div className="testimonials">
+      <Element name="testimonials" className="testimonials">
         <h3>I don't like to blow my trumpet but people just have nice things to say about me</h3>
 
         <div className="testimonial-section">
@@ -78,7 +81,7 @@ export default class Testimonials extends React.Component {
             <span className="fa fa-quote-right"></span>
           </div>
         </div>
-      </div>
+      </Element>
     );
   }
 }

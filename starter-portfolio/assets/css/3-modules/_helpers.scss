@@ -34,3 +34,10 @@ h3 .long-guest-name {
   width: 220px;
   transform: translateY(13px);
 }
+
+%section-modifier {
+  @include outer-container;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}

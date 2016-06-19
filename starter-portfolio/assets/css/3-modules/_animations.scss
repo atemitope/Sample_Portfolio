@@ -1,6 +1,6 @@
 @include keyframes(bounce) {
   0%, 100% {
-    transform: translateY(-10px);
+    transform: none;
   }
   50% {
     transform: translateY(10px);
