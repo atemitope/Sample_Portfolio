@@ -14,15 +14,15 @@ export default class Footer extends React.Component {
         </h3>
 
         <div className="social-icons">
-          <a href="#">
+          <a href="mailto:amodut@gmail.com?Subject=Hello%20Temitope">
             <span className="fa fa-envelope"></span>
           </a>
 
-          <a href="#">
+          <a href="www.dribbble.com/afroerudite">
             <span className="fa fa-dribbble"></span>
           </a>
 
-          <a href="#">
+          <a href="www.twitter.com/afroerudite">
             <span className="fa fa-twitter"></span>
           </a>
 
@@ -32,7 +32,7 @@ export default class Footer extends React.Component {
         </div>
 
         <div className="copyright">
-          &copy; 2016. Chinedu Daniel
+          &copy; 2016. Temitope Amodu
         </div>
       </Element>
     );

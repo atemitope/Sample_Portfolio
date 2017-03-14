@@ -84,7 +84,7 @@ export default class Main extends React.Component {
             <div className="group">
               <p>
                 <img src="./assets/img/profile.png" alt="Ade Bamidele Profile Picture" className="rounded-img" />
-                Hello <span className={this._handleGuestName()}>{this._guestName()}</span>, it’s a pleasure to meet you. Just in case you didn’t catch it the first time, my name is Chinedu Daniel and I build usable interfaces for the web. This might not interest you much but my tools of choice are <strong>sketch</strong> (for building the design comps) and the trio of <strong>html</strong> , <strong>css</strong>  and <strong>javascript</strong> (for bringing design comps to life). When I am not pushing pixels, I am either listening to good music, travelling to beautiful places around the world or just taking a nap (it helps me relax).
+                Hello <span className={this._handleGuestName()}>{this._guestName()}</span>, it’s a pleasure to meet you. Just in case you didn’t catch it the first time, my name is Temitope Amodu and I design usable interfaces. This might not interest you much but my tools of choice are <strong>sketch</strong> (for building the design comps) and the trio of <strong>html</strong> , <strong>css</strong>  and a bit of <strong>javascript</strong> (for bringing design comps to life). When I am not pushing pixels, I am either listening to good music, taking pictures and travelling to beautiful places around the world or just taking a nap (it helps me relax).
               </p>
             </div>
           </Element>
@@ -99,7 +99,7 @@ export default class Main extends React.Component {
                 </a>
 
                 <p>
-                  Xtrim - A url shortener
+                  Tushot - A url shortener
 
                   <a href="#">
                     <span className="fa fa-globe"></span>
@@ -114,7 +114,7 @@ export default class Main extends React.Component {
                 </a>
 
                 <p>
-                  Switch - Location sharing app
+                  Atm Locator - Open Source Automated Teller Machine Finder
 
                   <a href="#">
                     <span className="fa fa-globe"></span>

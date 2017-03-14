@@ -11,11 +11,11 @@ export default class Header extends React.Component {
 
           <div className="welcome-msg">
             <h1>
-              Hi, I'm Chinedu Daniel
+              Hi, I'm Temitope Amodu
             </h1>
 
             <p>
-              # UI Designer # Front End Developer # Music Lover
+              # UI Designer # UX Designer  # Photographer # Music Lover
             </p>
           </div>
 
